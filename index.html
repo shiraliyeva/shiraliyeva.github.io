@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Selected work in portfolio optimization, e-commerce analytics, and applied AI by Fidan Shiraliyeva.">
+<title>Fidan Shiraliyeva | Portfolio</title>
+<style>
+  :root {
+    color-scheme: light;
+    font: 100%/1.55 system-ui, sans-serif;
+    color: #172b25;
+    background: #f8faf7;
+    --ink-soft: #40574e;
+    --accent: #14614e;
+    --border: #d4e3d9;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: radial-gradient(ellipse at 15% 0%, #e2f1e7, transparent 34rem);
+  }
+  .wrap { width: min(100% - 2.5rem, 58rem); margin-inline: auto; }
+  header { border-bottom: 1px solid var(--border); background: #ffffff80; }
+  nav { display: flex; flex-wrap: wrap; gap: .45rem; }
+  a { color: var(--accent); text-underline-offset: .22em; }
+  a:hover { color: #0b4234; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+  nav a { padding: .2rem .7rem; border: 1px solid var(--border); border-radius: 2rem; background: #fff; text-decoration: none; }
+  nav a:hover { background: #eaf5ed; text-decoration: underline; }
+  main { padding-block: 1.5rem 2.5rem; }
+  h1, h2 { font-family: Georgia, serif; font-weight: 400; line-height: 1.08; margin: 0; }
+  h2 { font-size: clamp(1.65rem, 3vw, 2.2rem); letter-spacing: -.035em; }
+  p { margin: .6rem 0 0; color: var(--ink-soft); }
+  .projects { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; }
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: clamp(1rem, 2.5vw, 1.35rem);
+    border: 1px solid var(--border);
+    border-radius: .8rem;
+    background: #fff;
+    box-shadow: 0 3px 12px #153c2910;
+  }
+  .featured { background: linear-gradient(145deg, #edf7ef, #fff 80%); border-color: #bdd9c8; }
+  .category { margin: 0 0 .35rem; font-size: .875rem; color: var(--accent); font-weight: 680; }
+  .project-link { margin-top: auto; padding-block: .65rem .15rem; font-weight: 650; }
+  .capstone { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.9fr); gap: .65rem 1.5rem; }
+  .capstone p:first-child { margin-top: 0; }
+  .capstone .nda { font-size: .875rem; }
+  .about { padding-block: 1.4rem; }
+  .about-heading { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .7rem 1rem; }
+  .about h1 { font-size: clamp(2rem, 5vw, 3rem); letter-spacing: -.045em; }
+  .about dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .65rem 1.5rem; margin: .75rem 0 0; }
+  .about dt { font-weight: 680; }
+  .about dd { margin: .15rem 0 0; color: var(--ink-soft); }
+  @media (max-width: 40rem) {
+    .projects, .capstone, .about dl { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <section class="wrap about" aria-labelledby="about-name">
+    <div class="about-heading">
+      <h1 id="about-name">Fidan Shiraliyeva</h1>
+      <nav aria-label="Profile links">
+        <a href="https://www.linkedin.com/in/fidanshiraliyeva">LinkedIn</a>
+        <a href="https://github.com/shiraliyeva">GitHub</a>
+      </nav>
+    </div>
+    <dl>
+      <div>
+        <dt>McGill University</dt>
+        <dd>Master of Management in Analytics</dd>
+      </div>
+      <div>
+        <dt>University of Toronto</dt>
+        <dd>Honours Bachelor of Science | Mathematics and Pharmacology majors</dd>
+      </div>
+    </dl>
+  </section>
+</header>
+<main class="wrap">
+  <section class="projects" aria-label="Projects">
+    <article class="featured">
+      <p class="category">Portfolio optimization</p>
+      <h2>Efficient Frontier</h2>
+      <p>An exploration of the trade-off between portfolio risk and expected return. The efficient frontier identifies allocations that offer the highest expected return for each level of portfolio volatility.</p>
+      <a class="project-link" href="https://github.com/shiraliyeva?tab=repositories&amp;q=efficient">Find Efficient Frontier on GitHub</a>
+    </article>
+    <article>
+      <p class="category">E-commerce analytics</p>
+      <h2>Olist</h2>
+      <p>An e-commerce analytics project using Olist marketplace data.</p>
+      <a class="project-link" href="https://github.com/shiraliyeva?tab=repositories&amp;q=olist">Find Olist on GitHub</a>
+    </article>
+    <article class="capstone">
+      <div>
+        <p class="category">AI for operations</p>
+        <h2>MMA Capstone</h2>
+      </div>
+      <div>
+        <p>The capstone proposal focuses on a Databricks-based conversational assistant for operations teams. The proof of concept would retrieve approved documents, respect access controls, and cite sources so users could trace answers back to the supporting material.</p>
+        <p>The proposal also explores how a shared architecture could support assistants across business domains, each with its own terminology and knowledge sources.</p>
+        <p class="nda"><strong>Project code and materials are covered by an NDA.</strong></p>
+      </div>
+    </article>
+  </section>
+</main>
+</body>
+</html>
